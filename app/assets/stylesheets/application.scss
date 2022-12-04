@@ -33,6 +33,7 @@ a {
 
     li {
       list-style: none;
+
       a {
         color: #fff;
       }
@@ -42,6 +43,7 @@ a {
 
 .article__section {
   padding: 1rem;
+
   h2 {
     display: flex;
     align-items: center;
@@ -69,7 +71,7 @@ a {
 
   article {
     padding: 1rem;
-    
+
     #articles {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -86,11 +88,12 @@ a {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 16px;
     padding: 10px;
-    
+
     ul {
       padding: 10px;
       border: 1px solid #aaa;
       border-radius: 10px;
+
       li {
         list-style: none;
       }

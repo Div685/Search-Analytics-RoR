@@ -5,6 +5,5 @@ class SearchController < ApplicationController
     @user = session[:user_id]
 
     @session_values = Search.where(session_id: @user).pluck(:query).reverse.first(100)
-
   end
 end
