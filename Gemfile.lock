@@ -105,6 +105,8 @@ GEM
       faraday (~> 1)
       multi_json
     erubi (1.11.0)
+    faker (2.19.0)
+      i18n (>= 1.6, < 2)
     faraday (1.10.2)
       faraday-em_http (~> 1.0)
       faraday-em_synchrony (~> 1.0)
@@ -248,6 +250,9 @@ GEM
       sprockets (>= 3.0.0)
     thor (1.2.1)
     tilt (2.0.11)
+    turbo-rails (0.9.1)
+      actionpack (>= 6.0.0)
+      railties (>= 6.0.0)
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
@@ -286,6 +291,7 @@ DEPENDENCIES
   elasticsearch-model (~> 7.2)
   elasticsearch-persistence (~> 7.2)
   elasticsearch-rails (~> 7.2)
+  faker
   jbuilder (~> 2.7)
   listen (~> 3.3)
   pg (~> 1.1)
@@ -297,6 +303,7 @@ DEPENDENCIES
   selenium-webdriver (>= 4.0.0.rc1)
   shoulda-matchers
   spring
+  turbo-rails
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 4.1.0)
