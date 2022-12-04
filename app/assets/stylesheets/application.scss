@@ -77,3 +77,23 @@ a {
     }
   }
 }
+
+.search__section {
+  padding: 1rem;
+
+  .search__values {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 16px;
+    padding: 10px;
+    
+    ul {
+      padding: 10px;
+      border: 1px solid #aaa;
+      border-radius: 10px;
+      li {
+        list-style: none;
+      }
+    }
+  }
+}

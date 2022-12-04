@@ -1,2 +1,10 @@
-<h1>Search#index</h1>
-<p>Find me in app/views/search/index.html.erb</p>
+<section class="search__section">
+  <h3>Searched Value for the current User: <%= @user %></h3>
+  <div class="search__values">
+    <% @session_values.each do |search| %>
+    <ul>
+      <li style="list_style=none"><%= search %></li>
+    </ul>
+    <% end %>
+  </div>
+</section>
