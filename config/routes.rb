@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  get 'search/index'
   root 'article#index'
+  get 'article/index'
+  get 'search/index'
   resources 'article', only: [:index]
   resources 'search', only: [:index]
   post 'article/search', to: 'article#search'
