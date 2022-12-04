@@ -1,6 +1,9 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    RubyInline (3.12.5)
+      ZenTest (~> 4.3)
+    ZenTest (4.12.0)
     actioncable (6.1.7)
       actionpack (= 6.1.7)
       activesupport (= 6.1.7)
@@ -131,6 +134,8 @@ GEM
     faraday-rack (1.0.0)
     faraday-retry (1.0.3)
     ffi (1.15.5)
+    fuzzy-string-match (0.9.9)
+      RubyInline (>= 3.8.6)
     globalid (1.0.0)
       activesupport (>= 5.0)
     hashie (5.0.0)
@@ -248,6 +253,8 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
+    stimulus-rails (0.7.1)
+      rails (>= 6.0.0)
     thor (1.2.1)
     tilt (2.0.11)
     turbo-rails (0.9.1)
@@ -292,6 +299,7 @@ DEPENDENCIES
   elasticsearch-persistence (~> 7.2)
   elasticsearch-rails (~> 7.2)
   faker
+  fuzzy-string-match
   jbuilder (~> 2.7)
   listen (~> 3.3)
   pg (~> 1.1)
@@ -303,6 +311,7 @@ DEPENDENCIES
   selenium-webdriver (>= 4.0.0.rc1)
   shoulda-matchers
   spring
+  stimulus-rails
   turbo-rails
   turbolinks (~> 5)
   tzinfo-data
