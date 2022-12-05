@@ -83,6 +83,7 @@ test:
 #
 production:
   <<: *default
-  database: search_anayltics_production
-  username: search_anayltics
-  password: <%= ENV['SEARCH_ANAYLTICS_DATABASE_PASSWORD'] %>
+  #database: search_anayltics_production
+  #username: search_anayltics
+  #password: <%= ENV['SEARCH_ANAYLTICS_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
