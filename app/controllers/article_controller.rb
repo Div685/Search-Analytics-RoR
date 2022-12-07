@@ -7,7 +7,7 @@ class ArticleController < ApplicationController
 
   def search
     articles = Article.where('title LIKE ?', "%#{params[:query]}%")
-    render(partial: 'articles', locals: { articles: articles })
+    render(partial: 'articles', locals: { articles: })
     add_search_todb(params[:query], session[:user_id])
   end
 
@@ -22,7 +22,7 @@ class ArticleController < ApplicationController
     if session_search.nil? || !session_search.searched?(query)
       recent_search.save
     elsif session_search.query.length < query.length
-      session_search.update(query: query)
+      session_search.update(query:)
     end
   end
 

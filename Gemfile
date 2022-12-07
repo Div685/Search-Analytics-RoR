@@ -24,11 +24,11 @@ gem 'jbuilder', '~> 2.7'
 
 gem 'faker'
 gem 'fuzzy-string-match'
-gem 'stimulus-rails'
-gem 'turbo-rails'
-gem 'net-smtp', require: false
 gem 'net-imap', require: false
 gem 'net-pop', require: false
+gem 'net-smtp', require: false
+gem 'stimulus-rails'
+gem 'turbo-rails'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
@@ -64,7 +64,7 @@ group :test do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data' 
+gem 'tzinfo-data'
 
 gem 'elasticsearch-model', '~> 7.2'
 gem 'elasticsearch-persistence', '~> 7.2'
