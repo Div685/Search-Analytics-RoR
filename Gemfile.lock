@@ -161,6 +161,14 @@ GEM
     msgpack (1.6.0)
     multi_json (1.15.0)
     multipart-post (2.2.3)
+    net-imap (0.3.1)
+      net-protocol
+    net-pop (0.1.2)
+      net-protocol
+    net-protocol (0.2.0)
+      timeout
+    net-smtp (0.3.3)
+      net-protocol
     nio4r (2.5.8)
     nokogiri (1.13.9)
       mini_portile2 (~> 2.8.0)
@@ -257,6 +265,7 @@ GEM
       rails (>= 6.0.0)
     thor (1.2.1)
     tilt (2.0.11)
+    timeout (0.3.1)
     turbo-rails (0.9.1)
       actionpack (>= 6.0.0)
       railties (>= 6.0.0)
@@ -265,6 +274,8 @@ GEM
     turbolinks-source (5.2.0)
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
+    tzinfo-data (1.2022.7)
+      tzinfo (>= 1.0.0)
     web-console (4.2.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -302,6 +313,9 @@ DEPENDENCIES
   fuzzy-string-match
   jbuilder (~> 2.7)
   listen (~> 3.3)
+  net-imap
+  net-pop
+  net-smtp
   pg (~> 1.1)
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
@@ -320,7 +334,7 @@ DEPENDENCIES
   webpacker (~> 5.0)
 
 RUBY VERSION
-   ruby 2.7.2p137
+   ruby 3.1.2p20
 
 BUNDLED WITH
    2.1.4
