@@ -1,0 +1,16 @@
+<div>
+  <h2>Articles</h2>
+  <div class="Search__forms">
+    <%= render "article/form" %>
+  </div>
+  <article>
+    <%= turbo_frame_tag "articles" do %>
+      <% articles.each do |article| %>
+        <div class="article">
+          <h1><%= article.title %></h1>
+          <p><%= article.description %></p>
+        </div>
+      <% end %>
+    <% end %>
+  </article>
+</div>

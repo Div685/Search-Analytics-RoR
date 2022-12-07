@@ -11,6 +11,12 @@
   </head>
 
   <body>
+    <nav class="nav">
+      <ul>
+        <li><%= link_to 'Articles', root_path %></li>
+        <li><%= link_to 'Analytics', search_index_path %></li>
+      </ul>
+    </nav>
     <%= yield %>
   </body>
 </html>

@@ -1,0 +1,102 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav {
+  padding: 16px;
+  background: rgb(91, 164, 233);
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      list-style: none;
+
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.article__section {
+  padding: 1rem;
+
+  h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Search__forms {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    form {
+      padding: 14px;
+      width: 100%;
+
+      input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #aaa;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  article {
+    padding: 1rem;
+
+    #articles {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 16px;
+    }
+  }
+}
+
+.search__section {
+  padding: 1rem;
+
+  .search__values {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 16px;
+    padding: 10px;
+
+    ul {
+      padding: 10px;
+      border: 1px solid #aaa;
+      border-radius: 10px;
+
+      li {
+        list-style: none;
+      }
+    }
+  }
+}
